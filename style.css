@@ -1,0 +1,157 @@
+.alert {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5000;
+}
+#info_wrap {
+    text-align: center;
+    margin: 10px;
+}
+#info_date {
+    padding: 0 30px;
+}
+#month_ul {
+    width: 100%;
+}
+#month_ul li {
+    width: 14%;
+    height: 100px;
+    border: 1px solid #bbb;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 3px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+#day_wrap .panel {
+    width: 70%;
+    margin: 0 auto;
+}
+#today_task_list li {
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 5px;
+    cursor: pointer;
+}
+#today_task_list li:hover {
+    box-shadow: 1px 1px 0 #aaa;
+    position: relative;
+    top: -1px;
+}
+.task-list-item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.task-item-at {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+.task-item-title {
+    font-size: 20px;
+}
+.modal textarea {
+    height: 300px;
+    resize: none;
+}
+.show-text {
+    white-space: pre-wrap;
+    word-break: break-all;
+    padding: 0 15px;
+    font-size: 16px;
+}
+#prg_info_wrap {
+    margin: 10px 0;
+}
+#progress td {
+    cursor: pointer;
+}
+
+@keyframes spin3D {
+    from {
+        transform: rotate3d(.5,.5,.5, 360deg);
+    }
+    to{
+        transform: rotate3d(0deg);
+    }
+}
+.loading-wrap {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+}
+.spinner-box {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: 0 auto;
+    transform: translate(0, 60%);
+}
+.leo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.red-orbit {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #ffca91a5;
+    animation: spin3D 1s linear 0s infinite;
+}
+.green-orbit {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #91ffbfa5;
+    animation: spin3D 2s linear 0s infinite;
+}
+.blue-orbit {
+    width: 165px;
+    height: 165px;
+    border: 2px solid #91daffa5;
+    animation: spin3D 3s linear .2s infinite;
+}
+.white-orbit {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ffffff;
+    animation: spin3D 10s linear 0s infinite;
+}
+.w1 {
+    transform: rotate3D(1, 1, 1, 90deg);
+}
+.w2 {
+    transform: rotate3D(1, 2, .5, 90deg);
+}
+.w3 {
+    transform: rotate3D(.5, 1, 2, 90deg);
+}
+.modal-dialog {
+    width: 800px;
+}
+.red {
+    color: #f00;
+}
+.error {
+    color: #f00;
+    display: block;
+}
+.bg-gray {
+    background-color: #ddd;
+}
+.glyphicon-fire {
+    color: #f00;
+}
