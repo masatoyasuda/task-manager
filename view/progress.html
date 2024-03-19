@@ -1,0 +1,40 @@
+<div class="tab-pane" id="progress">
+    <div id="prg_info_wrap">
+        <div class="form-group form-inline">
+            <select class="form-control" id="client" onchange="PD.workInit();" oncontextmenu="PD.clientEdit(event.target.value); return false;"></select>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#work_create_modal" style="margin: 0 10px;">作業追加</button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#client_create_modal">案件追加</button>
+        </div>
+    </div>
+    <div id="chart_wrap"></div>
+    <div class="row">
+        <div class="col-xs-6">
+            <h4>作業リスト</h4>
+            <table class="table table-bordered table-condensed table-striped">
+                <thead>
+                    <tr class="info">
+                        <th>開始日</th>
+                        <th>終了日</th>
+                        <th>進捗</th>
+                        <th>タイトル</th>
+                    </tr>
+                </thead>
+                <tbody id="work_index_tbody"></tbody>
+            </table>
+        </div>
+        <div class="col-xs-6">
+            <h4>期間未指定の作業</h4>
+            <table class="table table-bordered table-condensed table-striped">
+                <thead>
+                    <tr class="info">
+                        <th>開始日</th>
+                        <th>終了日</th>
+                        <th>進捗</th>
+                        <th>タイトル</th>
+                    </tr>
+                </thead>
+                <tbody id="non_term_tbody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
