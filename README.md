@@ -8,7 +8,7 @@
 - frappe-ganttのライブラリを利用していますが、このリポジトリに保存されているfrappe-ganttは細かい部分を少しいじってあります。
   - 月名を日本語（zh）にすると漢数字になってしまいますが、数値になるように処理しています。
   - チャートの下に100pxほどの空白ができるのを無くしています。
-- chromeでlocalhostの通知を鳴らすためには「chrome://flags/#unsafely-treat-insecure-origin-as-secure」をenabledに変更し、「http://localhost」を入れる必要があります。
+- chromeでlocalhostの通知を鳴らすためには「chrome://flags/#unsafely-treat-insecure-origin-as-secure」をenabledに変更し、「 http://localhost 」を入れる必要があります。
 # 使い方（カレンダー）
 - 前日以前のタスクアラートはうざいので当日のアラートしか鳴りません。
   - 前日欠勤したなどがあった場合、前日のタスクに要注意。
