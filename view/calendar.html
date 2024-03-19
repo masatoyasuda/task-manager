@@ -1,0 +1,30 @@
+<div class="tab-pane active" id="calendar">
+    <div id="info_wrap">
+        <div class="btn-group pull-left" data-toggle="buttons">
+            <label class="btn btn-default active">
+                <input type="radio" name="calendarType" autocomplete="off" value="month" checked onchange="CD.dispTypeChange('month')"> 月
+            </label>
+            <label class="btn btn-default">
+                <input type="radio" name="calendarType" autocomplete="off" value="days" id="disp_type_day" onchange="CD.dispTypeChange('day')"> 日
+            </label>
+        </div>
+        <button type="button" class="btn btn-default" onclick="CD.dateChange(-1)">＜</button>
+        <span id="info_date">年月日</span>
+        <button type="button" class="btn btn-default"onclick="CD.dateChange(1)">＞</button>
+        <div class="pull-right">
+            <button type="button" class="btn btn-default" onclick="CD.dateChangeToday()">今日</button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#task_create_modal">予定追加</button>
+        </div>
+    </div>
+    <div id="month_wrap">
+        <ul id="month_ul"></ul>
+    </div>
+    <div id="day_wrap">
+        <div class="panel panel-default">
+            <div class="panel-heading">本日のタスク</div>
+            <div class="panel-body">
+                <ul id="today_task_list"></ul>
+            </div>
+        </div>
+    </div>
+</div>
